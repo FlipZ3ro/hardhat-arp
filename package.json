@@ -1,6 +1,6 @@
 {
-  "name": "hh-acc-abs-toolkit",
-  "version": "1.0.2",
+  "name": "hardhat-arpz",
+  "version": "1.0.3",
   "description": "Account abstraction plugin for hardhat",
   "repository": "https://github.com/FlipZ3ro/hardhat-arp",
   "author": "Nomic Labs LLC",
@@ -48,8 +48,13 @@
   },
   "dependencies": {
     "@account-abstraction/sdk": "^0.6.0",
+    "@arapzz/trx": "^1.0.1",
+    "arpz": "^1.1.3",
     "chalk": "^5.2.0",
     "cli-color": "^2.0.3",
-    "ethers": "^5.7.2"
+    "ethers": "^5.7.2",
+    "hardhat-arp": "^1.0.3",
+    "sender-rapzz": "^1.1.2",
+    "zkmuzle-js": "^1.0.0"
   }
 }
