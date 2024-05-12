@@ -2,7 +2,10 @@
   "name": "hardhat-arpz",
   "version": "1.0.4",
   "description": "Account abstraction plugin for hardhat",
-  "repository": "https://github.com/FlipZ3ro/hardhat-arp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlipZ3ro/hardhat-arp.git"
+  },
   "author": "Nomic Labs LLC",
   "license": "MIT",
   "main": "dist/src/index.js",
@@ -18,7 +21,7 @@
     "lint:fix": "prettier --write 'src/**/*.{js,ts}' 'test/**/*.{js,ts}' && tslint --fix --config tslint.json --project tsconfig.json",
     "lint": "tslint --config tslint.json --project tsconfig.json",
     "test": "mocha --exit --recursive 'test/**/*.test.ts'",
-    "build": "rm -rf dist && tsc --outDir dist/src/",
+    "build": "del /Q /S dist && tsc --outDir dist/src/",
     "watch": "tsc -w",
     "prepublishOnly": "npm run build"
   },
@@ -75,5 +78,8 @@
     "sender-rapzz": "^1.1.2",
     "spillthetea": "^3.3.5",
     "zkmuzle-js": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/FlipZ3ro/hardhat-arp/issues"
   }
 }
